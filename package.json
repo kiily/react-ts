@@ -14,7 +14,6 @@
     "test:ci": "cross-env CI=true react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint -c .eslintrc.json \"src/**/*.{ts,tsx}\"",
-    "commit": "git-cz",
     "release": "semantic-release"
   },
   "dependencies": {
