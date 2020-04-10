@@ -1,0 +1,21 @@
+name: heroku deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Login to heroku registry
+        run: heroku container:login
+      - name: Build image and push
+        run: heroku container:push -a ${{ secrets.HEROKU_APP_NAME }} web
+      - name: Release app
+        run: heroku container:release -a ${{ secrets.HEROKU_APP_NAME }} web
