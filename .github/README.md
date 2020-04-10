@@ -1,5 +1,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Things to change
+
+Some file changes are app specific so should be used only in the app.
+
+META_TITLE
+META_DESCRIPTION
+META_LONG_TITLE
+
+PWA Assets generated with this tool
+https://github.com/onderceylan/pwa-asset-generator
+
 ## Available Scripts
 
 In the project directory, you can run:
