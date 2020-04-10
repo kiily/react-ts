@@ -2306,6 +2306,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/emscripten@npm:^1.38.0":
+  version: 1.39.3
+  resolution: "@types/emscripten@npm:1.39.3"
+  checksum: 2/dd6453e0de7e5ec31850e021749a2ea6c25af9477d41cc973b1d6ce6cd14da97301d13da7a75e6161064800b0fcfb6c8e4be4b1b730039f724d8decd4e3b8fff
+  languageName: node
+  linkType: hard
+
 "@types/eslint-visitor-keys@npm:^1.0.0":
   version: 1.0.0
   resolution: "@types/eslint-visitor-keys@npm:1.0.0"
@@ -2374,15 +2381,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/keyv@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "@types/keyv@npm:3.1.1"
-  dependencies:
-    "@types/node": "*"
-  checksum: 2/3aaf557d5b82e733d5a17b7f55af5d6be953363c3a594f006d64265790fe87c301c6e1400c0b6b1cf72add50a0ceddc25afb8231ab8302a2e5b6ebfbfac30e5d
-  languageName: node
-  linkType: hard
-
 "@types/minimatch@npm:*":
   version: 3.0.3
   resolution: "@types/minimatch@npm:3.0.3"
@@ -2441,15 +2439,6 @@ __metadata:
     "@types/prop-types": "*"
     csstype: ^2.2.0
   checksum: 2/40912bdb87db9663ee77b7a0980c07a7a2617ec60495631d6f9575f4abab41269fad522eb4d6d2109e119c06891d03ac65bb96ddb847fc35c8a5558bfb4ebae0
-  languageName: node
-  linkType: hard
-
-"@types/responselike@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@types/responselike@npm:1.0.0"
-  dependencies:
-    "@types/node": "*"
-  checksum: 2/e6e6613c800aeda63e2331e753e8d21df1a2c9aa7a4bc71ed792a848e4811fc96e609759089355314a2318c76eff1f161499cd242044838ab1e6f56e463ebb9c
   languageName: node
   linkType: hard
 
@@ -2785,6 +2774,46 @@ __metadata:
   version: 4.2.2
   resolution: "@xtuc/long@npm:4.2.2"
   checksum: 2/ec09a359f98e9f8c47bf6c965e73b520a1a65e93f1febf6472babc8b6b0b425a2084452be103da5be11aec8c502ecfa29400713d55ef774579d04f691db44a2d
+  languageName: node
+  linkType: hard
+
+"@yarnpkg/fslib@npm:^2.0.0-rc.17":
+  version: 2.0.0-rc.17
+  resolution: "@yarnpkg/fslib@npm:2.0.0-rc.17"
+  dependencies:
+    "@yarnpkg/libzip": ^2.0.0-rc.10
+  checksum: 2/4e90a046f1645bac793c88811beb7da945af63cc9ce48930199714050c601adb52c7dab1dd3cac7d9fb200dbade4bcf15248925b98ccb3ed7546c339b9f66817
+  languageName: node
+  linkType: hard
+
+"@yarnpkg/libzip@npm:^2.0.0-rc.10":
+  version: 2.0.0-rc.10
+  resolution: "@yarnpkg/libzip@npm:2.0.0-rc.10"
+  dependencies:
+    "@types/emscripten": ^1.38.0
+  checksum: 2/95ae332b349eee4d53e0f098b7d1e4a399960d6661f33873f26cce47d32daa7e0cca7fbeb5f236aa17a20a1e5fd0d250e585267ec356df7732b6a835d934bd66
+  languageName: node
+  linkType: hard
+
+"@yarnpkg/pnpify@npm:^2.0.0-rc.20":
+  version: 2.0.0-rc.20
+  resolution: "@yarnpkg/pnpify@npm:2.0.0-rc.20"
+  dependencies:
+    "@yarnpkg/fslib": ^2.0.0-rc.17
+    chalk: ^3.0.0
+    comment-json: ^2.2.0
+    cross-spawn: 6.0.5
+  peerDependencies:
+    eslint: "*"
+    typescript: "*"
+  peerDependenciesMeta:
+    eslint:
+      optional: true
+    typescript:
+      optional: true
+  bin:
+    pnpify: ./lib/cli.js
+  checksum: 2/26b1656ffe13ce6760b3abd94d6bbc0f63b567cb7cabecaf14517a61dc79cbefb09bd07732a300e922c3f4edc7c6119c4500f30f9fa39cd67194ae154c5accce
   languageName: node
   linkType: hard
 
@@ -4809,6 +4838,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"comment-json@npm:^2.2.0":
+  version: 2.4.2
+  resolution: "comment-json@npm:2.4.2"
+  dependencies:
+    core-util-is: ^1.0.2
+    esprima: ^4.0.1
+    has-own-prop: ^2.0.0
+    repeat-string: ^1.6.1
+  checksum: 2/80bc181741f7966946e09ba253e97a4709288acb65e8b30e641efbca0a1a2c79f31d4df6cd1412a17ddb3d1289f552ec13e1d3f983b42ac84de6344fd062cf3d
+  languageName: node
+  linkType: hard
+
 "common-tags@npm:^1.8.0":
   version: 1.8.0
   resolution: "common-tags@npm:1.8.0"
@@ -5141,7 +5182,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-util-is@npm:1.0.2, core-util-is@npm:~1.0.0":
+"core-util-is@npm:1.0.2, core-util-is@npm:^1.0.2, core-util-is@npm:~1.0.0":
   version: 1.0.2
   resolution: "core-util-is@npm:1.0.2"
   checksum: 2/089015ee3c462dfceba70faa1df83b42a7bb35db26dae6af283247b06fe3216c65fccd9f00eebcaf98300dc31e981d56aae9f90b624f8f6ff1153e235ff88b65
@@ -5219,6 +5260,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cross-spawn@npm:6.0.5, cross-spawn@npm:^6.0.0, cross-spawn@npm:^6.0.5":
+  version: 6.0.5
+  resolution: "cross-spawn@npm:6.0.5"
+  dependencies:
+    nice-try: ^1.0.4
+    path-key: ^2.0.1
+    semver: ^5.5.0
+    shebang-command: ^1.2.0
+    which: ^1.2.9
+  checksum: 2/05fbbf957d9b81dc05fd799a238f6aacc2e7cc9783fff3f0e00439a97d6f269c90482571cbf1eeea17200fd119161a2d1f88aa49a8110b176e04f2a70825284f
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:7.0.1":
   version: 7.0.1
   resolution: "cross-spawn@npm:7.0.1"
@@ -5248,19 +5302,6 @@ __metadata:
     shebang-command: ^1.2.0
     which: ^1.2.9
   checksum: 2/96018c42a94a2f69e27c11688db638c343109e4eda5cc6586a83a1d2f102ef2ef4d184919593036748d386ddb67cc3e66658fefec85a4659958cde792f1a9ddc
-  languageName: node
-  linkType: hard
-
-"cross-spawn@npm:^6.0.0, cross-spawn@npm:^6.0.5":
-  version: 6.0.5
-  resolution: "cross-spawn@npm:6.0.5"
-  dependencies:
-    nice-try: ^1.0.4
-    path-key: ^2.0.1
-    semver: ^5.5.0
-    shebang-command: ^1.2.0
-    which: ^1.2.9
-  checksum: 2/05fbbf957d9b81dc05fd799a238f6aacc2e7cc9783fff3f0e00439a97d6f269c90482571cbf1eeea17200fd119161a2d1f88aa49a8110b176e04f2a70825284f
   languageName: node
   linkType: hard
 
@@ -6733,7 +6774,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^6.6.0":
+"eslint@npm:6.8.0, eslint@npm:^6.6.0":
   version: 6.8.0
   resolution: "eslint@npm:6.8.0"
   dependencies:
@@ -7639,27 +7680,6 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@2.1.2#builtin<compat/fsevents>, fsevents@patch:fsevents@~2.1.2#builtin<compat/fsevents>":
-  version: 2.1.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.1.2#builtin<compat/fsevents>::version=2.1.2&hash=77dfe6"
-  dependencies:
-    node-gyp: latest
-  checksum: 2/8e95236543caafaff54d239eb6d71a7d4827bbb14a9addf5fac11f37fa2c5f91cc84fc60e532403e291175c1745b524e355fee99c3e054ead1f85bdbac55c893
-  languageName: node
-  linkType: hard
-
-"fsevents@patch:fsevents@^1.2.7#builtin<compat/fsevents>":
-  version: 1.2.12
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.12#builtin<compat/fsevents>::version=1.2.12&hash=77dfe6"
-  dependencies:
-    bindings: ^1.5.0
-    nan: ^2.12.1
-    node-gyp: latest
-    node-pre-gyp: "*"
-  checksum: 2/f873bb718e0a886c4de803c7282f7379035eaef9955d11c133aa06a44e266801b437dd842115c5f304ee321b2c3444d8526f3c92098d6ffb1dfa203f547ffe82
-  languageName: node
-  linkType: hard
-
 "fstream@npm:^1.0.0, fstream@npm:^1.0.12":
   version: 1.0.12
   resolution: "fstream@npm:1.0.12"
@@ -8106,6 +8126,13 @@ fsevents@^1.2.7:
   version: 4.0.0
   resolution: "has-flag@npm:4.0.0"
   checksum: 2/2e5391139d3d287231ccb58659702392f6e3abeac3296fb4721afaff46493f3d9b99a9329ae015dfe973aa206ed5c75f43e86aec0267dce79aa5c2b6e811b3ad
+  languageName: node
+  linkType: hard
+
+"has-own-prop@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "has-own-prop@npm:2.0.0"
+  checksum: 2/8513ff905297afb7b65f4e22012a2c8e20ab006067841015bf338cfd23019b6c7cec89b5192b4cb7eaaa2a5370d2474dc9a0bcfdfd71100c45b8d3be9882f45b
   languageName: node
   linkType: hard
 
@@ -14774,6 +14801,8 @@ fsevents@^1.2.7:
     "@types/node": 13.11.1
     "@types/react": 16.9.34
     "@types/react-dom": 16.9.6
+    "@yarnpkg/pnpify": ^2.0.0-rc.20
+    eslint: 6.8.0
     eslint-config-prettier: 6.10.1
     eslint-config-react: 1.1.7
     eslint-plugin-prettier: 3.1.2
@@ -14784,7 +14813,7 @@ fsevents@^1.2.7:
     react: 16.13.1
     react-dom: 16.13.1
     react-scripts: 3.4.1
-    semantic-release: ^17.0.4
+    semantic-release: 17.0.4
     typescript: 3.8.3
   languageName: unknown
   linkType: soft
@@ -15453,31 +15482,6 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@1.1.7#builtin<compat/resolve>":
-  version: 1.1.7
-  resolution: "resolve@patch:resolve@npm%3A1.1.7#builtin<compat/resolve>::version=1.1.7&hash=8fccd0"
-  checksum: 2/876dac138d8a549b2750766bb2289041d00df2810daddb983d1b94eb0014b009f4e54e871afd5f86022a54597a168d1ba3c219e21066e5081bbba072e5ff35af
-  languageName: node
-  linkType: hard
-
-"resolve@patch:resolve@1.15.0#builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#builtin<compat/resolve>":
-  version: 1.15.0
-  resolution: "resolve@patch:resolve@npm%3A1.15.0#builtin<compat/resolve>::version=1.15.0&hash=8fccd0"
-  dependencies:
-    path-parse: ^1.0.6
-  checksum: 2/108f8aa9503b8178f8bd5474ad9b22b6dc93b2cc9a8ddeeb3dc3770190d0b4f3c38dfe08c855782725ae16b13e4f3418f94c33c9491543b9d9e57eeb8a1ffeb7
-  languageName: node
-  linkType: hard
-
-"resolve@patch:resolve@^1.10.0#builtin<compat/resolve>, resolve@patch:resolve@^1.13.1#builtin<compat/resolve>, resolve@patch:resolve@^1.15.1#builtin<compat/resolve>, resolve@patch:resolve@^1.8.1#builtin<compat/resolve>":
-  version: 1.15.1
-  resolution: "resolve@patch:resolve@npm%3A1.15.1#builtin<compat/resolve>::version=1.15.1&hash=8fccd0"
-  dependencies:
-    path-parse: ^1.0.6
-  checksum: 2/dceab9e78d618d4ebcef66c1c4c8bb28bc242fbb95625a498d759b6aaac00de0ebb91e9d6560f5f49ac073ab9e9e3e7450449b4bddf740ba8cb267b8b68ea70f
-  languageName: node
-  linkType: hard
-
 "restore-cursor@npm:^2.0.0":
   version: 2.0.0
   resolution: "restore-cursor@npm:2.0.0"
@@ -15798,7 +15802,7 @@ resolve@1.1.7:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:17.0.4, semantic-release@npm:^17.0.4":
+"semantic-release@npm:17.0.4":
   version: 17.0.4
   resolution: "semantic-release@npm:17.0.4"
   dependencies:
@@ -17514,16 +17518,6 @@ typescript@3.8.3:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 2/519b11576247fe3570d89a2aa757d8f666aafc0cb9465a6cdd4df09c1dc6bf7285f0c6008d2ac7a55ea26457e767aaab819f58439d80af2cce1d9805b2be1034
-  languageName: node
-  linkType: hard
-
-"typescript@patch:typescript@3.8.3#builtin<compat/typescript>":
-  version: 3.8.3
-  resolution: "typescript@patch:typescript@npm%3A3.8.3#builtin<compat/typescript>::version=3.8.3&hash=270b6c"
-  bin:
-    tsc: bin/tsc
-    tsserver: bin/tsserver
-  checksum: 2/dd473e358d618597295dced4673462c8a5ddce3a02e31199931444cdf97532548b52282130aa6b3f910b3efff45027ba20a5395908b1bd056fc5ac23f2fc6c81
   languageName: node
   linkType: hard
 
