@@ -1,6 +1,7 @@
 {
-  "short_name": "META TITLE",
-  "name": "Create React App Sample",
+  "short_name": "META_TITLE",
+  "name": "META_PWA_NAME",
+  "description": "META_DESCRIPTION",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
