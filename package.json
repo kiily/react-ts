@@ -11,8 +11,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:ci": "cross-env CI=true react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint -c .eslintrc.json \"src/**/*.{ts,tsx}\"",
+    "commit": "git-cz",
     "release": "semantic-release"
   },
   "dependencies": {
@@ -31,6 +33,9 @@
     "@types/node": "13.11.1",
     "@types/react": "16.9.34",
     "@types/react-dom": "16.9.6",
+    "commitizen": "4.0.4",
+    "cross-env": "7.0.2",
+    "cz-conventional-changelog": "3.1.0",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.1",
     "eslint-config-react": "1.1.7",
@@ -52,5 +57,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
