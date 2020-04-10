@@ -6,7 +6,7 @@
 
 Template CRA PWA, with TS, SCSS and customized CI/CD environment.
 
-You can find all the relevant details about what is included in this repo here: https://www.notion.so/kiilysden/React-TS-PWA-0ff8c6be6ae249bbbf3baebcf54703d9
+You can find all the relevant details about what is included in this repo here: [Template Details](https://www.notion.so/kiilysden/React-TS-PWA-0ff8c6be6ae249bbbf3baebcf54703d9)
 
 # Getting started:
 
