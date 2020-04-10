@@ -1,21 +1,29 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React-TS-PWA
 
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
-
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 
 # Implementation Details
 
-You can find all the relevant details about what is included in this repo here
+Template CRA PWA, with TS, SCSS and customized CI/CD environment.
 
-Some file changes are app specific so should be used only in the app.
+You can find all the relevant details about what is included in this repo here: https://www.notion.so/kiilysden/React-TS-PWA-0ff8c6be6ae249bbbf3baebcf54703d9
 
-META_TITLE
-META_DESCRIPTION
-META_LONG_TITLE
+# Getting started:
 
-PWA Assets generated with this tool
-https://github.com/onderceylan/pwa-asset-generator
+By default, this project uses `yarn 2` (`berry`) to manage modules. Feel free to switch to `npm` if more convenient.
+
+`yarn install`
+
+### Make it your own:
+
+This template has been prepopulated with some variables to act as placeholders for things that should be changed when creating a new app.
+
+`META_TITLE` --> the title of the app in `index.html` and short_name in `manifest.json`.
+`META_PWA_NAME`--> the name of the app in `manifest.json`
+`META_DESCRIPTION` --> the description of the app in `index.html` and `manifest.json`.
+`META_LONG_TITLE` --> the long title for the app in `manifest.json`.
+
+Lastly, don't forget to change the relevant fields in `package.json`
 
 ## Available Scripts
 
@@ -53,9 +61,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
