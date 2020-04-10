@@ -1,11 +1,11 @@
 {
-  "name": "basic-react-app",
+  "name": "react-ts",
   "description": "Basic Template from CRA using TS, ESLint, lint-staged, husky",
   "version": "0.1.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiily/ergonomics-react"
+    "url": "https://github.com/kiily/react-ts"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,6 +15,7 @@
     "lint": "eslint -c .eslintrc.json \"src/**/*.{ts,tsx}\""
   },
   "dependencies": {
+    "node-sass": "4.13.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "typescript": "3.8.3"
@@ -22,7 +23,6 @@
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
-    "react-scripts": "3.4.1",
     "@testing-library/jest-dom": "5.5.0",
     "@testing-library/react": "10.0.2",
     "@testing-library/user-event": "10.0.1",
@@ -35,7 +35,9 @@
     "eslint-plugin-prettier": "3.1.2",
     "husky": "4.2.5",
     "lint-staged": "10.1.3",
-    "prettier": "2.0.4"
+    "prettier": "2.0.4",
+    "react-scripts": "3.4.1",
+    "semantic-release": "^17.0.4"
   },
   "browserslist": {
     "production": [
