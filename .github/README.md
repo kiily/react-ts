@@ -14,13 +14,16 @@ By default, this project uses `yarn 2` (`berry`) to manage modules. Feel free to
 
 `yarn install`
 
-### Make it your own:
+## Make it your own:
 
 This template has been prepopulated with some variables to act as placeholders for things that should be changed when creating a new app.
 
 `META_TITLE` --> the title of the app in `index.html` and short_name in `manifest.json`.
+
 `META_PWA_NAME`--> the name of the app in `manifest.json`
+
 `META_DESCRIPTION` --> the description of the app in `index.html` and `manifest.json`.
+
 `META_LONG_TITLE` --> the long title for the app in `manifest.json`.
 
 Lastly, don't forget to change the relevant fields in `package.json`
