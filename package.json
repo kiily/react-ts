@@ -12,7 +12,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint -c .eslintrc.json \"src/**/*.{ts,tsx}\""
+    "lint": "eslint -c .eslintrc.json \"src/**/*.{ts,tsx}\"",
+    "release": "semantic-release"
   },
   "dependencies": {
     "node-sass": "4.13.1",
