@@ -1,6 +1,6 @@
 {
   "name": "react-ts",
-  "description": "A template for a react PWA built with CRA with a complete and custom CI/CD workflow around it (w/ yarn)",
+  "description": "A template for a react PWA built with CRA with a complete and custom CI/CD workflow around it (w/ yarn)-4r",
   "version": "1.0.0",
   "private": true,
   "repository": {
@@ -17,7 +17,7 @@
     "release": "semantic-release"
   },
   "dependencies": {
-    "node-sass": "4.13.1",
+    "node-sass": "4.14.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "typescript": "3.8.3"
@@ -27,24 +27,25 @@
     "@commitlint/config-conventional": "8.3.4",
     "@semantic-release/git": "9.0.0",
     "@testing-library/jest-dom": "5.5.0",
-    "@testing-library/react": "10.0.2",
-    "@testing-library/user-event": "10.0.1",
+    "@testing-library/react": "10.0.3",
+    "@testing-library/user-event": "10.1.0",
     "@types/jest": "25.2.1",
-    "@types/node": "13.11.1",
+    "@types/node": "13.13.2",
     "@types/react": "16.9.34",
     "@types/react-dom": "16.9.6",
     "commitizen": "4.0.4",
     "cross-env": "7.0.2",
     "cz-conventional-changelog": "3.1.0",
     "eslint": "6.8.0",
-    "eslint-config-prettier": "6.10.1",
+    "eslint-config-prettier": "6.11.0",
     "eslint-config-react": "1.1.7",
-    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-prettier": "3.1.3",
+    "eslint-plugin-simple-import-sort": "5.0.2",
     "husky": "4.2.5",
-    "lint-staged": "10.1.3",
-    "prettier": "2.0.4",
+    "lint-staged": "10.1.7",
+    "prettier": "2.0.5",
     "react-scripts": "3.4.1",
-    "semantic-release": "17.0.4"
+    "semantic-release": "17.0.7"
   },
   "browserslist": {
     "production": [
