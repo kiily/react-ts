@@ -1,6 +1,6 @@
 {
   "name": "react-ts",
-  "description": "A template for a react PWA built with CRA with a complete and custom CI/CD workflow around it (w/ yarn)-4r",
+  "description": "A template for a react PWA built with CRA with a complete and custom CI/CD workflow around it (w/ yarn)",
   "version": "1.0.0",
   "private": true,
   "repository": {
