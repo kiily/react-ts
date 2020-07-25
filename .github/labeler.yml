@@ -1,0 +1,8 @@
+src:
+  - src/**/*
+
+public:
+  - public/**/*
+
+assets:
+  - public/assets/**/*
