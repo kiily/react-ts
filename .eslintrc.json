@@ -16,7 +16,9 @@
   "rules": {
     "no-console": "error",
     "prettier/prettier": ["error", { "singleQuote": true }],
-    "simple-import-sort/sort": "error",
+    "simple-import-sort/imports": "error",
+    "sort-imports": "off",
+    "import/order": "off",
     "@typescript-eslint/explicit-member-accessibility": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/interface-name-prefix": 0,
